@@ -1,8 +1,8 @@
 # Use shadowsocks as command prefix to avoid name conflict
 # Maybe ss-local/server is better because easier to type
 PREFIX := shadowsocks
-LOCAL := $(GOPATH)/bin/$(PREFIX)-local
-SERVER := $(GOPATH)/bin/$(PREFIX)-server
+LOCAL := $(PWD)/bin/$(PREFIX)-local
+SERVER := $(PWD)/bin/$(PREFIX)-server
 CGO := CGO_ENABLED=1
 
 all: $(LOCAL) $(SERVER) $(TEST)
